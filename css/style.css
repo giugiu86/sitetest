@@ -1,3 +1,6 @@
+/******************************TAG SELECTORS**************************/
+/*selector {property:value;}*/
+/*Who? {What?:How?;}*/
 /*all body background*/
 body {
   background-color: #FECD70;
@@ -13,4 +16,24 @@ hr{
   border-color:grey;
   border-width: 5px;
   width: 5%;
+}
+/*
+img {
+  background-color: red;
+}
+*/
+/******************************CLASS SELECTORS**************************/
+.moodfood_logo
+{
+  background-color: red;
+}
+
+.moodfood_main_picture
+{
+  background-color: green;
+}
+/******************************ID SELECTORS**************************/
+#heading
+{
+  color: blue;
 }
