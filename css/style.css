@@ -9,6 +9,7 @@ body {
 h1{
   color: #674747;
 }
+
 /*line*/
 hr{
   border-style: none;
@@ -17,22 +18,27 @@ hr{
   border-width: 5px;
   width: 5%;
 }
-/*
-img {
-  background-color: red;
-}
-*/
+/*Class and Id overwrite the style specified in the tags*/
 /******************************CLASS SELECTORS**************************/
+/*use class if I want to assign the style to a specific group of elements*/
 .moodfood_logo
 {
-  background-color: red;
+  background-color: #FECD70;
 }
 
+.circular
+{
+  border-radius:100%;
+}
 .moodfood_main_picture
 {
   background-color: green;
 }
+.confirm_button:hover {
+  background-color: purple;
+}
 /******************************ID SELECTORS**************************/
+/*use id if I want to assign the style to a specific element.You can't specify more then one time the id*/
 #heading
 {
   color: blue;
