@@ -6,16 +6,19 @@
     <title>Mood Food</title>
     <!--link to css file to setup all the site style-->
     <!--With the / before css means the root directory, removing it means the path starting at the same subdirectory of the index-->
+    <!--At different position we can apply the style and the order priority read by Chrome is: style in element (i.e.body), in the index file and in the css file-->
     <link rel="stylesheet" href="css/style.css">
     <!--to import src (source) image from internet. alt attribute for the what see the user if the image is not available and used by google to search-->
     <!--to import src (source) image from the same folder of html file in images folder-->
-    <!--<img src="images/logo.png" alt="mood food logo">-->
-    <center><img src="https://a-cloud.b-cdn.net/media/iW=257&iH=145&oX=0&oY=0&cW=257&cH=145/56ce374449b4cc1adcb7aae71e2d817a.png" alt="mood food logo"></center>
-    <center><img src="images/main.jpeg" class="centerImage" alt="main picture" style="max-width: 50%"></center>
+    <!--<img src="images/logo.png" alt="mood food logo" is a description of the image if is not displayed>-->
+    <!--class attribute is used to identify the specific image and assign a specific style-->
+    <center><img class="moodfood_logo" src="https://a-cloud.b-cdn.net/media/iW=257&iH=145&oX=0&oY=0&cW=257&cH=145/56ce374449b4cc1adcb7aae71e2d817a.png" alt="mood food logo"></center>
+    <center><img class="moodfood_main_picture" src="images/main.jpeg" alt="main picture" style="max-width: 50%"></center>
     <!--horizontal line-->
    <hr>
     <!--header type 1-->
-  <h1>Mood Food</h1>
+    <!--I put an id in order to identify the specific header and assing a specific style-->
+  <h1 id="heading">Mood Food</h1>
   </head>
   <body>
     <p><h2>Mangi Sano,</h2>
