@@ -18,6 +18,9 @@ hr{
   border-width: 5px;
   width: 5%;
 }
+div{
+  background-color: #fcebe1;
+}
 /*Class and Id overwrite the style specified in the tags*/
 /******************************CLASS SELECTORS**************************/
 /*use class if I want to assign the style to a specific group of elements*/
