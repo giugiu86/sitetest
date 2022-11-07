@@ -4,10 +4,16 @@
 /*all body background*/
 body {
   background-color: #FECD70;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 /*header 1*/
 h1{
   color: #674747;
+  padding-left: 8px;
+  font-style: Overpass;
 }
 
 /*line*/
@@ -20,6 +26,8 @@ hr{
 }
 div{
   background-color: #fcebe1;
+/*here padding should be used instead margin because padding refer to the space in the content in div, instead margin refers to out */
+  padding-left: 8px;
 }
 /*Class and Id overwrite the style specified in the tags*/
 /******************************CLASS SELECTORS**************************/
@@ -36,6 +44,9 @@ div{
 .moodfood_main_picture
 {
   background-color: green;
+}
+.confirm_button {
+  margin-left: 8px;
 }
 .confirm_button:hover {
   background-color: purple;
