@@ -8,6 +8,7 @@ body {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+  /*If I put only margin: 0px means that all the margin should be 0*/
 }
 /*header 1*/
 h1{
@@ -32,6 +33,18 @@ div{
 /*Class and Id overwrite the style specified in the tags*/
 /******************************CLASS SELECTORS**************************/
 /*use class if I want to assign the style to a specific group of elements*/
+top_container{
+  background-color: #fcebe1;
+/*here padding should be used instead margin because padding refer to the space in the content in div, instead margin refers to out */
+  padding-left: 8px;
+}
+middle_container{
+  background-color: #FECD70;
+/*here padding should be used instead margin because padding refer to the space in the content in div, instead margin refers to out */
+  padding-left: 8px;
+}
+
+
 .moodfood_logo
 {
   background-color: #FECD70;
