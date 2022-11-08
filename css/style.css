@@ -33,17 +33,45 @@ div{
 /*Class and Id overwrite the style specified in the tags*/
 /******************************CLASS SELECTORS**************************/
 /*use class if I want to assign the style to a specific group of elements*/
-top_container{
+.top_container{
   background-color: #fcebe1;
 /*here padding should be used instead margin because padding refer to the space in the content in div, instead margin refers to out */
   padding-left: 8px;
 }
-middle_container{
+
+.middle_container{
   background-color: #FECD70;
 /*here padding should be used instead margin because padding refer to the space in the content in div, instead margin refers to out */
   padding-left: 8px;
 }
 
+/*In all the three container the space for content is the same*/
+/*Adding padding or border, the total size of the container change. Adding margin no because means the space outside the container*/
+.first_square{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: solid 10px;
+}
+
+.second_square{
+  background-color: blue;
+  border: solid 20px;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  margin-left: 260px;
+}
+
+.third_square{
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border: solid 10px;
+  margin-left: 500px;
+}
 
 .moodfood_logo
 {
