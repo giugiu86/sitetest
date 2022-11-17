@@ -9,6 +9,8 @@ body {
   margin-right: 0px;
   margin-bottom: 0px;
   /*If I put only margin: 0px means that all the margin should be 0*/
+  /*text align works if there is no width percent*/
+  text-align: center;
 }
 /*header 1*/
 h1{
@@ -46,13 +48,15 @@ div{
 }
 
 /*In all the three container the space for content is the same*/
-/*Adding padding or border, the total size of the container change. Adding margin no because means the space outside the container*/
+/*The blocks are automatically to the same position in height because is indicated by the html elements*/
 .first_square{
   background-color: red;
   width: 200px;
   height: 200px;
+  /*Adding padding or border, the total size of the container change (dimension+border+padding). Adding margin no because means the space outside the container*/
   padding: 20px;
   border: solid 10px;
+  position: absolute;
 }
 
 .second_square{
@@ -62,6 +66,10 @@ div{
   width: 200px;
   height: 200px;
   margin-left: 260px;
+  /*position absolute means that the position of the object is relative to its parent (all screen or div)*/
+  position: absolute;
+  /*the object will be aligned*/
+  display: inline-block;
 }
 
 .third_square{
@@ -73,9 +81,30 @@ div{
   margin-left: 500px;
 }
 
+/*The parent now contain the child square and the dimension of the child is relative to the parent*/
+.parent_container{
+  width: 400px;
+  height: 400px;
+  background-color: grey;
+  position: relative;
+}
+
+.child_square{
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border: solid 10px;
+  /*In order to activate the right position relative to parent you have to put position absolute*/
+  right: 50px;
+  position: absolute;*/
+}
+
 .moodfood_logo
 {
   background-color: #FECD70;
+  /*position fixed means that remains fixed during the scroll down of the page*/
+  position: fixed;
 }
 
 .circular
@@ -92,9 +121,26 @@ div{
 .confirm_button:hover {
   background-color: purple;
 }
+
+/*All the block elements (div, h1-6, p, list and form), its box, takes all the width of the page as default. So I can't put other elements next to them.
+It's possible to separate the elements of a paragraph adding a span*/
+/*Inline elements are elements that take space that they need (you can't change the width). Are inline elements: span, img and anchor*/
+.span_tuo{
+  text-decoration: underline;
+}
+/*is possible to change a block element to inline element adding the properties inline in css and viceversa*/
 /******************************ID SELECTORS**************************/
 /*use id if I want to assign the style to a specific element.You can't specify more then one time the id*/
 #heading
 {
-  color: blue;
+  color: blue
+}
+
+#heading_width_perc
+{
+  color: purple;
+  /*Is the percentage of the block width respect the page*/
+  width: 50%
+  /*text align works if there is no width percent. If there is a % width a margin auto should be added 0 top and bottom and 0 left and right*/
+ margin: 0 auto 0 auto;
 }
