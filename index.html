@@ -18,12 +18,13 @@
     <!--header type 1-->
     <!--I put an id in order to identify the specific header and assing a specific style-->
   <h1 id="heading">Mood Food</h1>
+  <h1 id="heading_width_perc">Mood Food</h1>
 </head>
 <body>
   <!--div is used to divide the content in the container and has to be used into css file since is unuseless-->
   <div class="top_container">
-    <p><h2>Mangi Sano,</h2>
-    <h2>al tuo passo</h2></p>
+    <h2>Mangi Sano,</h2>
+    <h2>al <span class='span_tuo'>tuo</span> passo</h2>
   </div>
     <button class="confirm_button">Scopri di più</button>
     <!--ul unordered list, bullet list-->
@@ -110,6 +111,11 @@
   </div>
   <div class="third_square">
     <p>Third Square</p>
+  </div>
+  <div class="parent_container">
+    <div class="child_square">
+      <p>Child Square</p>
+    </div>
   </div>
 </body>
 </html>
