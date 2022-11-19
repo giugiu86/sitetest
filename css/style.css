@@ -12,12 +12,18 @@ body {
   /*text align works if there is no width percent*/
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
 }
 /*header 1*/
 h1{
   color: #674747;
   padding-left: 8px;
   font-style: Overpass;
+/*If I put only the pixel then the zoom in zoom out doesn't work. You can use the percentage that is dynamic (100% has 16px as default) so if we want 90 px we have to divide it by 16*/
+/*100% = 16px = 1em*/
+/*It is better to use the r(root)em unit because in case there is a specification of font size at parent level (body in this case) will not ereditate the size*/
+  font-size: 5.62rem;
+  margin: 30px auto 30px auto;
 }
 
 /*line*/
@@ -28,6 +34,8 @@ hr{
   border-width: 5px;
   width: 5%;
 }
+
+/*divisor/container*/
 div{
   background-color: #fcebe1;
 /*here padding should be used instead margin because padding refer to the space in the content in div, instead margin refers to out */
