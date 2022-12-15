@@ -3,7 +3,7 @@
 /*Who? {What?:How?;}*/
 /*all body background*/
 body {
-  background-color: #FECD70;*/
+  background-color: #FECD70;
   margin-left: 0px;
   margin-top: 0px;
   margin-right: 0px;
@@ -28,12 +28,21 @@ h1{
   line-height: 2;
 }
 
+
 h2{
 /*space between the lines of the text*/
   line-height: 1;
   margin-top: 0px;
 }
 
+/*media is use to change style when a condition is true. max-width 900px means when the display is tablet or mobile*/
+@media (max-width: 900px) {
+  h2 {
+    color: red;
+    line-height: 1;
+    margin-top: 0px;
+  }
+}
 /*line*/
 hr{
   border-style: none;
