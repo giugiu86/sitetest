@@ -2,6 +2,7 @@
 /*selector {property:value;}*/
 /*Who? {What?:How?;}*/
 /*all body background*/
+
 body {
   background-color: #FECD70;
   margin-left: 0px;
@@ -165,6 +166,11 @@ It's possible to separate the elements of a paragraph adding a span*/
 /*is possible to change a block element to inline element adding the properties inline in css and viceversa*/
 /******************************ID SELECTORS**************************/
 /*use id if I want to assign the style to a specific element.You can't specify more then one time the id*/
+
+.invisible {
+  background: red;
+}
+
 #heading
 {
   color: blue
